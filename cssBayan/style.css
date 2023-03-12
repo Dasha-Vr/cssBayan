@@ -1,0 +1,79 @@
+
+.container{
+max-width: 40rem;
+margin: 0 auto;
+}
+
+.accordion input[type="radio"] {
+    display: none;
+}
+
+.accordion label {
+    /* display: block; */
+    font-weight: bold;
+    padding: 0px;
+    background-color: #eee;
+    cursor: pointer;
+
+}
+
+label{
+    display: flex;
+}
+
+.title{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+
+}
+.accordion .content {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+
+.accordion input[type="radio"]:checked + label {
+    background-color: #ccc;
+}
+
+.accordion input[type="radio"]:checked + label + .content.icon2 {
+    display: none;
+    }
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 1000px;
+
+}
+
+
+
+.accordion input[type="radio"]:hover + label + .content {
+    max-height: 1000px;
+}
+
+
+.content{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon{
+    width: 1rem;
+    height: 1rem;
+}
+
+.icon2{
+width: 1rem;
+height: 1rem;
+}
+
+.pic{
+width: 50vh;
+height: 50vh;
+}
