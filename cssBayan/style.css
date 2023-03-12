@@ -9,7 +9,6 @@ margin: 0 auto;
 }
 
 .accordion label {
-    /* display: block; */
     font-weight: bold;
     padding: 0px;
     background-color: #eee;
