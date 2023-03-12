@@ -41,13 +41,11 @@ label{
 
 .accordion input[type="radio"]:checked + label + .content.icon2 {
     display: none;
-    }
+}
 
 .accordion input[type="radio"]:checked + label + .content {
     max-height: 1000px;
-
 }
-
 
 
 .accordion input[type="radio"]:hover + label + .content {
